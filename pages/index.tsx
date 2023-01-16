@@ -1,3 +1,5 @@
+import About from "@/components/About";
+import Experience from "@/components/Experience";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import { Inter } from "@next/font/google";
@@ -16,16 +18,23 @@ export default function Home() {
       </Head>
 
       <Header />
-      {/* hero */}
-      <section id="hero" className="snap-center">
+
+      <section id="hero" className="snap-start">
         <Hero />
       </section>
-      {/* about */}
+
+      <section id="about" className="snap-center">
+        <About />
+      </section>
       {/* experience */}
+      <section id="exp" className="snap-center">
+        <Experience />
+      </section>
+
       {/* skills */}
       {/* project */}
     </div>
   );
 }
 
-// https://www.youtube.com/watch?v=urgi2iz9P6U 1 hour 12 min
+// https://www.youtube.com/watch?v=urgi2iz9P6U 1 hour 31 min
