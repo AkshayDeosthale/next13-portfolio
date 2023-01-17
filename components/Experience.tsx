@@ -16,12 +16,16 @@ const Experience = ({}: Props) => {
       transition={{
         duration: 1.5,
       }}
-      className="h-screen items-center relative flex overflow-hidden flex-col text-left md:flex-row max-w-full px-10 justify-evenly mx-auto"
+      className="h-screen mt-8 items-center relative flex overflow-hidden flex-col text-left md:flex-row max-w-full px-10 justify-evenly mx-auto"
     >
       <h3 className="absolute top-24 uppercase tracking-[10px] text-gray-500 text-2xl">
         Experience
       </h3>
-      <div className="">
+      <div className="flex w-full space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory ">
+        <ExpCard />
+        <ExpCard />
+        <ExpCard />
+        <ExpCard />
         <ExpCard />
         <ExpCard />
         <ExpCard />
